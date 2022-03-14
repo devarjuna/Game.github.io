@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="porkalam" class="porkalam">
+    <span id="kill-message" class="display-none kill-message"></span>
+    <span id="rand-gen" class="rand-gen-number">Click the fire button</span>
+    <div id="blue-warriors" class="blue-warriors play">
+      <span data-stage="1"><span class="soldier">1</span>
+        <img src="assets/images/emoji-without-face.png" alt="without-face" height="50">
+      </span>
+      <span data-stage="1"><span class="soldier">2</span>
+        <img src="assets/images/emoji-without-face.png" alt="without-face" height="50">
+      </span>
+      <span data-stage="1"><span class="soldier">3</span>
+        <img src="assets/images/emoji-without-face.png" alt="without-face" height="50">
+      </span>
+      <span data-stage="1"><span class="soldier">4</span>
+        <img src="assets/images/emoji-without-face.png" alt="without-face" height="50">
+      </span>
+      <span data-stage="1"><span class="soldier">5</span>
+        <img src="assets/images/emoji-without-face.png" alt="without-face" height="50">
+      </span>
+    </div>
+    <div id="red-warriors" class="red-warriors">
+      <span data-stage="1">
+        <img src="assets/images/emoji-without-face.png" alt="without-face" height="50">
+        <span class="soldier">1</span>
+      </span>
+      <span data-stage="1">
+        <img src="assets/images/emoji-without-face.png" alt="without-face" height="50">
+        <span class="soldier">2</span>
+      </span>
+      <span data-stage="1">
+        <img src="assets/images/emoji-without-face.png" alt="without-face" height="50">
+        <span class="soldier">3</span>
+      </span>
+      <span data-stage="1">
+        <img src="assets/images/emoji-without-face.png" alt="without-face" height="50">
+        <span class="soldier">4</span>
+      </span>
+      <span data-stage="1">
+        <img src="assets/images/emoji-without-face.png" alt="without-face" height="50">
+        <span class="soldier">5</span>
+      </span>
+
+    </div>
+    <form id="death-form" class="display-none death-form" action="#">
+      <input class="death-number" id="deathNo" type="number" min="1" max="5" minlength="1" maxlength="1" required>
+      <button type="button" class="ripple" onclick="validateDeath()">Shoot</button>
+    </form>
+    <button id="fire-canon" class="ripple">Fire</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
